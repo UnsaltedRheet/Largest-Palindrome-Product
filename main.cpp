@@ -31,7 +31,7 @@ bool checkIfPalindrome (int integer) {
 	char* charArray = &intString[0];
 	for (int i = 0; i < intString.length(); ++i) {
 		if (charArray[i] == charArray[intString.length() - i]) {
-			if (*(&charArray + i) == *(&charArray - i)) {
+			if (*(&charArray + i) == *(&charArray - (intString.length() - i))) {
 				return true;
 			}
 		}
