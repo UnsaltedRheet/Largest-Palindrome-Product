@@ -229,3 +229,7 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+# Other Visual Studio Files
+*.vcxproj
+*.vcxproj.filters
