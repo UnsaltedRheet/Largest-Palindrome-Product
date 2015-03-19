@@ -31,12 +31,12 @@ bool checkIfPalindrome (int integer) {
 	char* charArray = &intString[0];
 	for (int i = 0; i < intString.length(); ++i) {
 		if (charArray[i] == charArray[intString.length() - i]) {
-			// make this work
-			if (*charArray == *charArray) {
+			if (*(&charArray + i) == *(&charArray - i)) {
 				return true;
 			}
 		}
 	}
+
 	return false;
 }
 
